@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>拉手智慧餐厅 - 拉手智慧餐厅</title>
+    <meta name="format-detection" content="telephone=no, address=no">
+    <meta name="apple-mobile-web-app-capable" content="yes"/> <!-- apple devices fullscreen -->
+    <meta name="apple-touch-fullscreen" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <link href="http://wd.lashou.com/app/resource/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="container container-fill">
+
+    <div class="mobile-div img-rounded">
+        <div class="mobile-hds" style="background-color:#0e90d2">预约状态
+	<span class="zt">
+             <em class="no">等待确认</em>
+                	</span>
+        </div>
+        <div class="mobile-content">
+
+            <form class="form" method="post" id="form" action="" onsubmit="return checkstatus()">
+                <table class="form-table">
+                    <tr>
+                        <th><label for="">预约状态</label></th>
+                        <td>
+                            <select id="status" name="status" class="form-control">
+                                <option value="0" selected="selected">待确认</option>
+                                <option value="1">确认</option>
+                                <option value="2">拒绝 该时段已被预约</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><label for="">付款状态</label></th>
+                        <td>
+                            <!-- <select id="paystatus" name="paystatus" class="form-control" disabled> -->
+                            <select id="paystatus" name="paystatus" class="form-control" disabled="disabled">
+                                <option value="2" selected="selected">已付款</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><label for="">修改时间</label></th>
+                        <td>
+
+                            <link type="text/css" rel="stylesheet" href="css/datetimepicker.css"/>
+                            <script type="text/javascript" src="js/datetimepicker.js"></script>
+                            <input type="text" id="datepicker_yuyuetime" name="yuyuetime" value="2016-09-09 17:44"
+                                   class="datetimepickers datetimepicker form-control" readonly="readonly"
+                                   style="padding:6px 12px;"/>
+                            <script type="text/javascript">
+                                $("#datepicker_yuyuetime").datetimepicker({
+                                    format: "yyyy-mm-dd hh:ii",
+                                    minView: "0",
+                                    pickerPosition: "top-right",
+                                    startDate: "2016-09-10 09:34",//最小日期
+                                    autoclose: true
+                                });
+                            </script>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><label for="">备注</label></th>
+                        <td>
+                            <textarea rows="3" class="form-control" id="kfinfo" name="kfinfo"></textarea>
+                        </td>
+                    </tr>
+                </table>
+
+            </form>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

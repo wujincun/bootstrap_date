@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no, address=no">
+    <meta name="apple-mobile-web-app-capable" content="yes"/> <!-- apple devices fullscreen -->
+    <meta name="apple-touch-fullscreen" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <link href="http://wd.lashou.com/app/resource/css/bootstrap.min.css" rel="stylesheet">
+    <link  type="text/css" rel="stylesheet" href="css/orderDetail.css">
+    <link type="text/css" rel="stylesheet" href="css/datetimepicker.css"/>
+
+</head>
+<body>
+<div class="orderDetailWrap">
+    <div class="DetailContent">
+        <div class="productInfo orderDetailPart">
+            <h1 class="orderDetailH1">商品信息</h1>
+            <ul>
+                <li class="orderDetailLine">
+                    <span class="lineTitle">按摩预约</span>
+                    <span class="lineRightArea fr"><span class="lineRightArrow arrowRight"></span></span>
+                </li>
+                <li class="orderDetailLine">
+                    <span class="lineTitle">A套餐</span>
+                    <span class="dueMoney orange fr">&yen600</span>
+                </li>
+                <li class="orderDetailLine">
+                    <span class="lineTitle">优惠金额</span>
+                    <span class="cutMoney orange fr">-&yen60</span>
+                </li>
+                <li class="orderDetailLine clearfix">
+                    <div class="productMoney orange fr">合计：<span class="totalMoney">&yen50</span></div>
+                    <div class="productTotal fr">共<span class="productNum">1</span>件</div>
+                </li>
+            </ul>
+
+        </div>
+        <div class="orderInfo orderDetailPart">
+            <h1 class="orderDetailH1">订单详情</h1>
+            <ul>
+                <li class="orderDetailLine">
+                    <div class="lineTitle">订单号：<span>121212</span></div>
+                </li>
+                <li class="orderDetailLine">
+                    <div class="lineTitle">提交时间：<span>2016-08-22 11:53:53</span></div>
+                </li>
+                <li class="orderDetailLine">
+                    <div class="lineTitle">预约时间：<span>2016-08-22 11:53:53</span></div>
+                </li>
+                <li class="orderDetailLine">
+                    <div class="lineTitle">订单状态：<span class="orange">待确认</span></div>
+                </li>
+                <li class="orderDetailLine">
+                    <div class="lineTitle">支付方式：<span>余额支付</span></div>
+                </li>
+                <li class="orderDetailLine">
+                    <div class="lineTitle">性别：<span>女</span></div>
+                </li>
+                <li class="orderDetailLine">
+                    <div class="lineTitle">年龄：<span>用户未填写</span></div>
+                </li>
+            </ul>
+        </div>
+        <div class="userInfo orderDetailPart">
+            <h1 class="orderDetailH1">用户信息</h1>
+            <ul>
+                <li class="orderDetailLine">
+                    <div class="lineTitle">客户姓名：<span>汤姆</span></div>
+                </li>
+                <li class="orderDetailLine">
+                    <div class="lineTitle">客户手机：<span>18810765555</span></div>
+                </li>
+            </ul>
+        </div>
+        <div class="orderStatus orderDetailPart">
+            <h1 class="orderDetailH1">预约状态</h1>
+            <ul>
+                <li class="orderDetailLine payStatus chooseStatus">
+                    <div class="lineRightArea fr">
+                        <span class="lineRightArrow arrowDown"></span>
+                    </div>
+                    <div class="lineTitle">付款状态：<span class="orange payStatusText">已付款</span></div>
+                </li>
+                <li class="orderDetailLine payOtherStatus chooseStatus" style="display: none">
+                    <div class="lineTitle "><span style="visibility: hidden">付款状态：</span><span class="orange payStatusText">未付款</span></div>
+                </li>
+                <li class="orderDetailLine statusDate">
+                    <span class="lineTitle"> 修改时间：<input id="datepicker_yuyuetime" name="yuyuetime" value="2016-09-09 17:44"
+                                                         class="datetimepickers datetimepicker form-control" readonly="readonly"></span>
+                    <span class="lineRightArea fr"><span class="lineRightArrow arrowDown"></span></span>
+                </li>
+            </ul>
+        </div>
+        <div class="remark orderDetailPart">
+            <h1 class="orderDetailH1">备注</h1>
+            <textarea class="orderDetailRemark" placeholder="请输入备注（可不填）"></textarea>
+        </div>
+    </div>
+    <div class="footerButton">
+        <div class="btnContent">
+            <div class="orderDetailBtn"><span>待确认</span></div>
+            <div class="orderDetailBtn"><span>确认</span></div>
+            <div class="orderDetailBtn"><span>拒绝</span></div>
+            <div class="orderDetailBtn"><span>已完成</span></div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/datetimepicker.js"></script>
+<script>
+    var $statusDate = $('.statusDate');
+    $statusDate.on('click',function () {
+        $("#datepicker_yuyuetime").datetimepicker({
+            format: "yyyy-mm-dd hh:ii",
+            minView: "0",
+            pickerPosition: "top-right",
+            startDate: "2016-09-10 09:34",//最小日期
+            autoclose: true
+        });
+    })
+</script>
+</body>
+</html>

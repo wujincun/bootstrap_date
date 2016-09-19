@@ -1,0 +1,223 @@
+/*重置*/
+html {
+  height: 100%;
+  min-width: 6.4rem;
+  font-size: 312.5%;
+  background-color: #f2f4f8;
+  -webkit-tap-highlight-color: transparent;
+  overflow-x: hidden;
+}
+body {
+  font-family: arial,Microsoft Yahei;
+  position: relative;
+  color: #333;
+  font-size: .28em;
+  line-height: 1.5;
+}
+body,
+ul,
+ol,
+li,
+form {
+  margin: 0;
+  padding: 0;
+  -webkit-text-size-adjust: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+img {
+  border: 0;
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+div,
+li,
+p,
+menu,
+dl,
+dt,
+dd {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-weight: normal;
+  -webkit-tap-highlight-color: transparent;
+}
+body,
+html {
+  height: 100%;
+}
+input,
+select,
+textarea {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-appearance: none;
+  border: 0;
+  border-radius: 0;
+}
+textarea:focus {
+  outline: 0;
+}
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: 1;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0;
+  text-shadow: none;
+  vertical-align: middle;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  margin: 0;
+  -webkit-writing-mode: horizontal-tb;
+}
+button,
+html input[type=button],
+input[type=reset],
+input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+em,
+i {
+  font-style: normal;
+}
+img {
+  border: 0;
+  vertical-align: top;
+}
+a {
+  color: #333;
+  text-decoration: none;
+  outline: 0;
+}
+/*公共*/
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+/*页面样式*/
+.orderDetailWrap .DetailContent > div:last-child {
+  margin-bottom: 0.98rem;
+}
+.orderDetailWrap .DetailContent .orderDetailPart {
+  padding-bottom: 0.22rem;
+  border-bottom: 1px solid #ebebeb;
+}
+.orderDetailWrap .DetailContent .orderDetailPart .orderDetailH1 {
+  font-size: 0.32rem;
+  height: 0.89rem;
+  line-height: 0.88rem;
+  color: #3c3c3c;
+  padding: 0 0.22rem;
+  border-bottom: 1px solid #ebebeb;
+}
+.orderDetailWrap .DetailContent .orderDetailPart .orderDetailLine {
+  height: 0.89rem;
+  line-height: 0.88rem;
+  border-bottom: 1px solid #ebebeb;
+  padding: 0 0.22rem;
+}
+ .lineTitle {
+  font-size: 0.3rem;
+  color: #787878;
+}
+.orderDetailWrap .DetailContent .orderDetailPart .orderDetailLine .productTotal {
+  margin-right: 0.24rem;
+}
+.orderDetailWrap .DetailContent .orderDetailPart .orderDetailLine .orange {
+  color: #ff7200;
+}
+.orderDetailWrap .DetailContent .orderDetailPart .orderDetailRemark {
+  border-bottom: 1px solid #ebebeb;
+  padding: 0 0.22rem;
+  height: 1.78rem;
+  line-height: 0.88rem;
+  word-break: break-all;
+  width: 100%;
+  box-sizing: border-box;
+}
+ .lineRightArea {
+  width: 0.4rem;
+  text-align: center;
+}
+ .lineRightArea .lineRightArrow {
+  display: inline-block;
+  height: 0.17rem;
+  width: 0.17rem;
+  border-right: 1px solid #787878;
+  border-top: 1px solid #787878;
+}
+ .lineRightArea .arrowRight {
+  -webkit-transform: rotate(45deg);
+}
+.orderDetailWrap .DetailContent .orderDetailPart .lineRightArea .arrowUp {
+  -webkit-transform: rotate(-45deg);
+}
+.orderDetailWrap .DetailContent .orderDetailPart .lineRightArea .arrowDown {
+  -webkit-transform: rotate(135deg);
+}
+.orderDetailWrap .footerButton {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  height: 0.98rem;
+  border-top: 1px solid #ebebeb;
+  overflow-x: scroll;
+  z-index: 999;
+}
+.orderDetailWrap .footerButton .btnContent {
+  white-space: nowrap;
+  line-height: 1;
+  font-size: 0;
+  background-color: #fff;
+  text-align: center;
+  display: -webkit-flex;
+}
+.orderDetailWrap .footerButton .btnContent .orderDetailBtn {
+  position: relative;
+  height: 0.98rem;
+  width: 25%;
+  background-color: #fff;
+  display: inline-block;
+  padding: 0.2rem;
+  box-sizing: border-box;
+  flex: 1;
+}
+.orderDetailWrap .footerButton .btnContent .orderDetailBtn span {
+  display: inline-block;
+  background-color: #ff7200;
+  height: 0.58rem;
+  width: 1.58rem;
+  border-radius: 0.04rem;
+  line-height: 0.58rem;
+  text-align: center;
+  color: #fff;
+  font-size: 0.3rem;
+}
